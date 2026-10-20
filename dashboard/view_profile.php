@@ -70,7 +70,7 @@ if ($profile['role'] === 'artist') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Profile</title>
-    <link rel="stylesheet" href="../css/style.css?v=dashboard-sidebar-1">
+    <link rel="stylesheet" href="../css/style.css?v=responsive-2">
 </head>
 <body class="with-sidebar">
     <?php renderDashboardSidebar('pinned_artworks'); ?>

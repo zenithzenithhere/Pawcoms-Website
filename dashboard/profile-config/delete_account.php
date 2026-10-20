@@ -58,7 +58,7 @@ if ($stmt->execute()) {
         session_destroy();
 
         // Send user back to the public homepage
-        header('Location: ../../index.php?status=deleted');
+        header('Location: ../../index.html?status=deleted');
         exit();
 
     } else {
