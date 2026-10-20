@@ -105,7 +105,7 @@ if (empty($_SESSION['pin_csrf_token'])) {
 
     <title>Artwork Feed</title>
 
-    <link rel="stylesheet" href="../css/style.css?v=dashboard-pin-1">
+    <link rel="stylesheet" href="../css/style.css?v=responsive-2">
 
 
 </head>

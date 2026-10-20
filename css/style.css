@@ -984,3 +984,79 @@ figcaption time {
 
   .panel, .upload-box, .uploader-group { padding: 20px; }
 }
+
+
+/* Responsive dashboard navigation (phones and small tablets) */
+@media (max-width: 700px) {
+  /* Give the page its full width instead of reserving space at the left. */
+  body.with-sidebar {
+    padding: 12px;
+  }
+
+  /* Put the navigation at the top instead of fixing it to the left. */
+  .sidebar {
+    position: static;
+    width: 100%;
+    min-height: 0;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .sidebar > div:first-child {
+    flex: none;
+  }
+
+  .sidebar-header {
+    padding: 12px 16px;
+  }
+
+  /* Side-scroll navigation links on narrow screens. */
+  .sidebar-menu {
+    display: flex;
+    width: 100%;
+    flex: none;
+    gap: 4px;
+    padding: 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .sidebar-menu li {
+    flex-shrink: 0;
+  }
+
+  .sidebar-menu a {
+    padding: 9px 12px;
+    border-left: 0;
+    border-bottom: 3px solid transparent;
+    font-size: 14px;
+  }
+
+  .sidebar-menu a:hover,
+  .sidebar-menu .active a {
+    border-left-color: transparent;
+    border-bottom-color: var(--yellow);
+  }
+
+  .sidebar-footer {
+    padding: 8px 12px;
+  }
+
+  /* Text, cards and images should not extend beyond the screen. */
+  .panel h1, .upload-box h1, .page-header h1, .welcome-card h1 {
+    font-size: 28px;
+  }
+
+  .artwork-post-header {
+    flex-wrap: wrap;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .page, .gallery, .upload-box, .main-wrapper {
+    min-width: 0;
+  }
+}

@@ -24,7 +24,7 @@ $errorMessage = '';
 $result = $conn->query(
     'SELECT id, fullname, email, role, photo
      FROM users
-     ORDER BY id DESC'
+     ORDER BY fullname ASC'
 );
 
 if ($result) {
@@ -43,7 +43,7 @@ if ($result) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users</title>
 
-    <link rel="stylesheet" href="../css/style.css?v=dashboard-sidebar-1">
+    <link rel="stylesheet" href="../css/style.css?v=responsive-2">
     
 
 </head>
@@ -53,7 +53,7 @@ if ($result) {
     <main class="page">
         <section class="panel">
             <h1>Users</h1>
-            <p class="description">All registered accounts in the system.</p>
+            <p class="description">All registered accounts in the system. Ordered by name</p>
 
             <?php if ($errorMessage !== ''): ?>
                 <p class="message"><?php echo htmlspecialchars($errorMessage); ?></p>
