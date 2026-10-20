@@ -23,6 +23,6 @@ if (ini_get("session.use_cookies")) {
 session_destroy();
 
 // 5. Redirect the user to the login page
-header("Location: ../index.php");
+header("Location: ../index.html");
 exit();
 ?>
