@@ -1,0 +1,2 @@
+ALTER TABLE image_uploads
+ADD COLUMN is_pinned TINYINT(1) NOT NULL DEFAULT 0;
